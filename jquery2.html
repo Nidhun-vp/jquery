@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+     <h2>something to hide</h2>
+     <p>hide me</p>
+     <p id="para">hide me too</p>
+     <p class="para-class">third para</p>
+     <button id="btn1">click me</button>
+     <button id="btn2">ok</button>
+    <!-- //basic syntax:$(selector).action() -->
+    
+<script>//document ready ayya function work avum that button click cheyyumbo hide
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#para").hide();
+
+                });
+                
+                $("#btn2").click(function(){
+                    $(".para-class").hide();
+
+                });
+            });
+
+
+          
+                
+            
+
+    </script>
+</body>
+</html>
