@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+     <button>start animation</button>
+     <p> a simple animation example</p>
+     <div style="background:#2124bf;height:100px;width:100px;position:absolute;"></div>
+    <!-- //basic syntax:$(selector).animate({parameters},speed,callback) -->
+    
+<script>//document ready ayya function work avum that button click cheyyumbo hide
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("div").animate({
+                        
+                        left:'250px',
+                        opacity:'0.5',
+                        height:'150px',
+                        width:'150px'
+                    });
+
+                });
+            });
+
+    </script>
+</body>
+</html>
