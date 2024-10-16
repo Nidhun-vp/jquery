@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+    <p>see the fadeTo() method example with different parameters</p>
+    <button>click to fade in boxes</button><br><br>
+
+    <div id="div1" style="width:80px;height:80px;background-color:red;">
+     </div><br>
+
+     <div id="div2" style="width:80px;height:80px;background-color:green;">
+    </div><br>
+
+    <div id="div3" style="width:80px;height:80px;background-color:blue">
+    </div><br>
+    <!-- //basic syntax:$(selector).action() -->
+    
+<script>//document ready ayya function work avum that button click cheyyumbo hide
+            $(document).ready(function()
+            {
+                    $("button").click(function()
+                    {
+                        $("#div1").fadeTo("slow",0.1);
+                        $("#div2").fadeTo("slow",0.2);
+                        $("#div3").fadeTo("slow",0.5);
+                          //make color transparent 
+                    })
+             });
+
+    </script>
+</body>
+</html>

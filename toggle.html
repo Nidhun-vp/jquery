@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+    
+    <button class="button" >Toggle</button>
+    <div class="d1" style="border:1px solid black;padding:10px;width:250px">
+
+        <p>
+            <b>this is a little poem</b><br>
+            twinkle twinkle little star
+            how i wonder what do you are <br>
+            </p>
+
+    </div>
+  
+
+    <script>
+        $(document).ready(function(){
+         $(".button").click(function(){
+            $("div.d1").toggle(1500);//1.5 sec delay
+         })
+
+         
+        })
+    </script>
+</body>
+</html>
